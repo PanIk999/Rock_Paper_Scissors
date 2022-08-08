@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #999;
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 2.7rem;
+}
+h2{
+    font-size: 1.89em
+}
+h3{
+   font-size: 1.62em 
+}
+#roundsel{
+    font-size: 1.26em;
+}
+.btn{
+    display: inline-block;
+    padding: 0.36em 1.8em;
+    border: 0.1em solid #FFFFFF;
+    margin:0.3em 0.3em 0.3em 0;
+    border-radius: 0.27em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Monda', sans-serif;
+    font-weight: 300;
+    font-size: 1.26em;
+    background: #369;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2sec;
+}
+.btn:hover{
+    color: #000000;
+    background: #FFFFFF;
+}
+@media all and (max-width:54em){
+    .btn{
+        display: block;
+        margin: 0.4em auto;
+
+    }
+}
+input[type="radio"]{
+    /* -webkit-appearance: none; */
+}
+.mainGame{
+    width: 100vw;
+    height: 18vw;
+    background: rgb(255, 55, 0);
+    display:flex;
+    justify-content: space-around;
+}
+label:not(label[for="rounds"]){
+    height: 9rem;
+    width: 9rem;
+    border: 0.36rem solid #369;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+.fa-solid{
+    font-size: 6.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #369;
+}
+input[type="radio"]:checked + label{
+    background-color: rgb(255, 55, 0);
+    border:aliceblue;
+}
+#score{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 3rem;
+    color: rgb(255, 55, 0);
+    background-color: #369;
+}
+#output2{
+    font-size: 1.53rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/554d295f42.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <form action="">
+        <label for="rounds" id="roundsel">Select how many rounds you wish to play</label><br>
+        <select name="rounds" id="rounds" class="btn">
+          <option value="" disabled selected>Select One</option>
+          <option value="3">3</option>
+          <option value="6">6</option>
+          <option value="9">9</option>
+        </select>
+        <br><br>
+        
+      </form>
+      <div id="score">
+        <h2 class="score">Player 1 Score :</h2>
+        <h2>Computer Score :</h2>
+        <h2 id="myScore">0</h2>
+        <h2 id="herScore">0</h2>
+      </div>
+      <h3>Round : </h3>
+      <h3 id="count">0</h3>
+      <h3>of total Rounds : </h3>
+      <h3 id="round">0</h3>
+      <h3 id="message"></h3>
+      
+        <form action=""  class="mainGame">
+            
+            <input type="radio" name="radio" id="rock" value="1">
+            <label for="rock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </label>
+            <input type="radio" name="radio" id="paper" value="2">
+            <label for="paper">
+            <i class="fa-solid fa-hand-spock"></i>
+            </label>
+            <input type="radio" name="radio" id="scissors" value="3">
+            <label for="scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </label><br>
+        </form>
+        <p id="output2"></p>
+      <button id="btn" class="btn">Choose your Hand and Push</button>
+      
+      <p id="output"></p>
+      
+      
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
